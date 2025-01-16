@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Interactive rating component</title>
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -16,27 +22,56 @@
 </head>
 <body>
 
+
   <!-- Rating state start -->
 
-  How did we do?
+  <main>
+    <img src="images/icon-star.svg">
+    <h2>How did we do?</h2>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+    <p>Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!</p>
 
-  1 2 3 4 5
+    <form>
+      <div id="stars">
+        <input type="radio" name="star" id="1"/>
+        <label for="1" id="text">1</label> 
+    
+        <input type="radio" name="star" id="2"/>
+        <label for="2" id="text">2</label>
 
-  Submit
+        <input type="radio" name="star" id="3"/>
+        <label for="3" id="text">3</label>
+      
+        <input type="radio" name="star" id="4"/>
+        <label for="4" id="text">4</label>
+
+        <input type="radio" name="star" id="5"/>
+        <label for="5" id="text">5</label>
+      </div>
+
+    
+      <div id="submitButton">
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+  </main>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <!--
+
+  You selected  out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
   don’t hesitate to get in touch!
+
+  -->
 
   <!-- Thank you state end -->
 
