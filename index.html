@@ -6,6 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
+
+  <!--scripts-->
+
+  <script src="./script.js" defer></script>
   
   <title>Frontend Mentor | Interactive rating component</title>
 
@@ -26,7 +30,7 @@
   <!-- Rating state start -->
 
   <main>
-    <img src="images/icon-star.svg">
+    <img src="images/icon-star.svg" id="imgStar">
     <h2>How did we do?</h2>
 
     <p>Please let us know how we did with your support request. All feedback is appreciated 
@@ -40,8 +44,8 @@
         <input type="radio" name="star" id="2"/>
         <label for="2" id="text">2</label>
 
-        <input type="radio" name="star" id="3"/>
-        <label for="3" id="text">3</label>
+        <input type="radio" name="star" id="3" checked/>
+        <label for="3" id="text" >3</label>
       
         <input type="radio" name="star" id="4"/>
         <label for="4" id="text">4</label>
@@ -60,20 +64,20 @@
 
   <!-- Rating state end -->
 
-  <!-- Thank you state start -->
 
-  <!--
+  <div id="submitMessage">
+    <img src="images/illustration-thank-you.svg" id="imageSubmit">
+    
+    <span><p id="SelectedStars">You selected 3 out of 5</p></span>
 
-  You selected  out of 5
+    <h2>Thank you</h2>
 
-  Thank you!
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+    don’t hesitate to get in touch!
+    </p>
+  </div>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  -->
-
-  <!-- Thank you state end -->
 
   
   <div class="attribution">

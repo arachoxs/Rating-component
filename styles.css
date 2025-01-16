@@ -5,7 +5,7 @@
     margin: 0;
 }
 
-img{
+img[id*="imgStar"]{
     width: 17px;
     height: 16px;
     background-color: hsl(213, 19%, 22%);
@@ -74,7 +74,7 @@ input[type*="radio"]:checked + label{
     color: hsl(213, 19%, 18%) !important;
 }
 
-label{
+label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,4 +107,48 @@ button[type*="submit"]:hover{
     background-color: hsl(0, 0%, 100%);
 }
 
+/*Submit design*/
+
+img[id*="imageSubmit"]{
+    width: 162px;
+    height: 108px;
+    align-self: center;
+    margin-bottom: 15px;
+
+}
+
+#submitMessage{
+    box-sizing: border-box;
+    background-color: hsl(213, 19%, 18%);
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    display: none;
+}
+
+#submitMessage *{
+    width:fit-content;
+}
+
+#submitMessage p{
+    text-align: center;
+    line-height: normal;
+}
+
+#SelectedStars{
+    background-color: hsl(213, 19%, 22%);
+    line-height: 0;
+    border-radius: 15px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+}
+
+span p[id*="SelectedStars"]{
+    color:hsl(25, 60%, 50%);
+}
 
