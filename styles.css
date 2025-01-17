@@ -83,6 +83,7 @@ label {
     height: 40px;
     width: 40px;
     border-radius: 100%;
+    transition: background-color 0.2s ease;
 }
 
 label:hover ,#text:hover{
@@ -101,6 +102,7 @@ button[type*="submit"]{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
+    transition: background-color 0.2s ease;
 }
 
 button[type*="submit"]:hover{
